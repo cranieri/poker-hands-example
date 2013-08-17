@@ -1,0 +1,21 @@
+<h1>Poker!</h1>
+<table border="1">
+  <tr><th>Hands in the Game</th><th>Rank</th></tr>
+<% @poker.hands.each do |hand| %>
+      <tr><td>
+    <%hand.cards.each do |card| %>
+    <%= "#{card.value}#{card.suit} - " %>
+    <%end%>
+      </td><td><%=hand.rank.class%></td></tr>
+<%end%>
+</table>
+<br/> <br/>
+<br/>
+<h2>Winner</h2>
+<table border="1"><tr><th>Hand</th><th>Rank</th></tr>
+  <tr><td>
+<% @winner.cards.each do |card| %>
+    <%=card.value %><%=card.suit %>
+<%end%>
+<td><%=@winner.rank %></td></tr>
+</table>
