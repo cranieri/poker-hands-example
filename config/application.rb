@@ -58,7 +58,7 @@ module PokerTest
     config.assets.enabled = true
 
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
-    config.autoload_paths += Dir["#{config.root}/spec/**/"]
+    config.autoload_paths += Dir["#{config.root}/spec/spec_helper.rb"]
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
