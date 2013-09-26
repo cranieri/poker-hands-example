@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,9 +20,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development,:test do
+  gem 'rspec-rails','~> 2.13.1'
+  gem 'factory_girl_rails', '~> 4.2.1'
+end
+
 gem 'jquery-rails'
 
-gem 'poker_hands', '~> 0.0.5'
+gem 'poker_hands'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
