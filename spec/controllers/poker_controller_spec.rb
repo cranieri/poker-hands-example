@@ -1,4 +1,4 @@
-
+require 'spec_helper'
 describe PokerController do
   describe "GET#index" do
     it "creates 4 hands" do
