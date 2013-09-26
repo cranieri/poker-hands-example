@@ -1,4 +1,4 @@
-require 'spec_herlper'
+require 'spec_helper'
 
 describe PokerController do
   describe "GET#index" do
