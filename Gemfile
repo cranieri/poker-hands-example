@@ -23,6 +23,7 @@ end
 group :development,:test do
   gem 'rspec-rails','~> 2.13.1'
   gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'capistrano'
 end
 
 gem 'jquery-rails'
@@ -30,6 +31,8 @@ gem 'jquery-rails'
 gem 'poker_hands'
 
 gem "codeclimate-test-reporter"
+
+gem 'rvm-capistrano'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
