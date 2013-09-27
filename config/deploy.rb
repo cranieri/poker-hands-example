@@ -10,8 +10,8 @@ set :application, "poker-hands-example"
 set :repository,  "https://github.com/cranieri/poker-hands-example.git"
 
 set :user, "root"
-#ssh_options[:forward_agent] = true
-ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "test_yoogoin")]
+ssh_options[:forward_agent] = true
+#ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "test_yoogoin")]
 
 
 default_run_options[:pty] = true
