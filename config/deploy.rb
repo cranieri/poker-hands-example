@@ -5,14 +5,12 @@ set :rvm_ruby_string,  ENV['GEM_HOME'].gsub(/.*\//,"")
 set :rvm_type, :user
 set :rvm_path, "/usr/local/rvm"
 set :rvm_bin_path, "/usr/local/rvm/bin"
-
+set :rvm_ruby_string, "1.9.3-p194"
 set :application, "poker-hands-example"
 set :repository,  "https://github.com/cranieri/poker-hands-example.git"
 
 set :user, "root"
 ssh_options[:forward_agent] = true
-ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "semaphore")]
-
 
 default_run_options[:pty] = true
 
