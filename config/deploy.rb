@@ -11,11 +11,8 @@ set :repository,  "https://github.com/cranieri/poker-hands-example.git"
 
 set :user, "root"
 ssh_options[:forward_agent] = true
-
 default_run_options[:pty] = true
 
-#set :password, "0zSu797Ynd"
-#set :branch, "sidekiq"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
